@@ -1,0 +1,14 @@
+
+[epic_crafter]
+	#How much FE the Epic Package Crafter should hold.
+	#Range: > 0
+	energy_capacity = 10000
+	#How much total FE the Epic Package Crafter should use per operation.
+	#Range: > 0
+	energy_req = 10000
+	#How much FE/t maximum the Epic Package Crafter can use.
+	#Range: > 0
+	energy_usage = 1000
+	#Should the Epic Package Crafter draw energy from ME systems.
+	draw_me_energy = true
+
