@@ -1,0 +1,8 @@
+{
+	warps: {
+		plants: { dim: "javd:void", x: 479, y: 64, z: 256, time: 1736194951394L, xRot: 25.776222f, yRot: -127.40464f }
+		cobble: { dim: "javd:void", x: 480, y: 64, z: 416, time: 1736381951719L, xRot: 42.886982f, yRot: -35.41854f }
+	}
+	mute_timeouts: { }
+	kits: { }
+}
