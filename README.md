@@ -12,9 +12,20 @@
     1. `./run.sh`
     1. `sed -i.bak 's/^eula=false$/eula=true/' eula.txt && rm eula.txt.bak`
     1. `./run.sh`
+    1. add spark server jar to mods
+    1. `/stop` to stop the server.
+    1. set up the backup by unzipping the zip
+    1. move the file under `saves` to the root server folder
+    1. edit `server.properties` to the new world save name
+    1. delete the old `world` folder (old save)
+    1. `./run.sh`
 
-1. `/stop` to stop the server.
 
+
+## WinterNode
+1. log into https://gcp.winternode.com/server/<>
+1. Go to SFTP Details and press "Launch SFTP"
+1. move all the files from `moniserver/` to the server.
 
 
 
