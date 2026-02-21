@@ -1,3 +1,4 @@
 /moniserver*
 /artifact_tmp
 *.zip
+*.jar
