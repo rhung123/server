@@ -12,8 +12,9 @@
     1. `./run.sh`
     1. `sed -i.bak 's/^eula=false$/eula=true/' eula.txt && rm eula.txt.bak`
     1. `./run.sh`
-    1. add spark server jar to mods
     1. `/stop` to stop the server.
+    1. add spark server jar to mods
+    1. Change the pack mode to Expert with `java -jar mods/monilabs-*.jar E`
     1. set up the backup by unzipping the zip
     1. move the file under `saves` to the root server folder
     1. edit `server.properties` to the new world save name
@@ -26,7 +27,7 @@
 1. log into https://gcp.winternode.com/server/<>
 1. Go to SFTP Details and press "Launch SFTP"
 1. move all the files from `moniserver/` to the server.
-
+1. 
 
 
 
@@ -34,4 +35,4 @@
 
 ## Update
 
-In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
+1. Run ./sync_and_build.sh
