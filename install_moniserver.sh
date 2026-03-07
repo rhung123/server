@@ -141,6 +141,35 @@ rm -f "$FORGE_INSTALLER.log"
 rm -f server.zip
 
 #############################################
+# Configure server.properties
+#############################################
+
+echo "==> Configuring server.properties"
+
+if [[ -f server.properties ]]; then
+  sed -i.bak 's/^level-name=.*/level-name=TTPD/' server.properties
+  sed -i.bak 's/^white-list=.*/white-list=true/' server.properties
+  rm -f server.properties.bak
+else
+  echo "WARNING: server.properties not found"
+fi
+
+#############################################
+# Configure whitelist
+#############################################
+
+echo "==> Configuring whitelist"
+
+cat > whitelist.json <<'EOF'
+[
+  {
+    "uuid": "f5728319-27c2-4923-8a9a-10d06eb146b6",
+    "name": "sphoro"
+  }
+]
+EOF
+
+#############################################
 
 # Final step
 
